@@ -6,6 +6,14 @@
 This project implements a custom real-time streaming pipeline that tracks NBA team momentum using Kafka producers and consumers.
 The system simulates scoring events during NBA games, streams them to a Kafka topic, and visualizes the live momentum between teams.
 
+
+## Insight Focus
+
+Each Kafka message represents a scoring event (team + player + points).
+As messages arrive, the consumer updates each team’s total score in real time.
+
+This creates a live momentum visualization, letting you see which team is currently gaining the upper hand.
+It’s a simplified version of what sports broadcasters use for live performance tracking.
 ## Features
 - **Producer**: Streams JSON-formatted scoring events (team, player, points, current score).
 - **Consumer**: Tracks team scores, lead changes, and scoring runs in real time.
